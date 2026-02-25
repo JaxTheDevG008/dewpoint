@@ -7,7 +7,7 @@
     --btn-hover-bg-color: oklch(75.306% 0.06089 243.311);
     --mini-analytic-bg-color: oklch(93.1% 0.00011 271.152);
     --input-bg: oklch(93.1% 0.00011 271.152);
-    --toDoList-line-split-color: 1px solid rgb(221, 221, 221);
+    --to-do-list-line-split-color: rgb(221, 221, 221);
     --input-bd-color: oklch(100% 0.00011 271.152);
     --task-bg-color: oklch(97.594% 0.00298 264.795);
     --task-hover-bg-color: oklch(93.1% 0.00011 271.152);
@@ -40,7 +40,7 @@
     --btn-hover-bg-color: oklch(65.194% 0.12939 230.07);
     --mini-analytic-bg-color: oklch(20% 0.05 260);
     --input-bg: oklch(20% 0.05 260);
-    --toDoList-line-split-color: 1px solid rgb(54, 54, 54);
+    --to-do-list-line-split-color: rgb(54, 54, 54);
     --input-bd-color: oklch(11.779% 0.05035 260.832);
     --task-bg-color: oklch(11.779% 0.05035 260.832);
     --task-hover-bg-color: oklch(26.741% 0.04452 281.116);
@@ -306,6 +306,7 @@ button:hover {
 .toDoListName {
     position: relative;
     bottom: 5px;
+    font-size: 1.2rem;
 }
 
 .options {
@@ -315,6 +316,7 @@ button:hover {
     justify-content: right;
     bottom: 84px;
     gap: 14px;
+    margin-top: 30px;
 }
 
 .listAndKanbanToggle {
@@ -422,7 +424,7 @@ button:hover {
 .toDoListLineSplit {
     position: relative;
     bottom: 60px;
-    background-color: var(--toDoList-line-split-color);
+    background-color: var(--to-do-list-line-split-color);
     border: none;
     height: 1px;
 }
@@ -757,8 +759,8 @@ input[type="checkbox"]:checked::before {
     top: 30px;
     left: 30px;
     padding: 20px;
-    width: 300px;
-    height: fit-content;
+    width: 400px;
+    height: 300px;
     border: var(--bd-color);
     border-radius: 20px;
     display: flex;
@@ -769,7 +771,20 @@ input[type="checkbox"]:checked::before {
 }
 
 .focusTimerName {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 20px;
     color: white;
+    font-size: 1.2rem;
+}
+
+.mainTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
 }
 
 .timerProgressRing {
@@ -804,7 +819,7 @@ input[type="checkbox"]:checked::before {
 
 .timerMinutes {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 400;
     color: white;
     z-index: 2;
     margin: 0;
@@ -821,6 +836,7 @@ input[type="checkbox"]:checked::before {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 
 .timerLengthOptions {

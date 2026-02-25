@@ -81,7 +81,9 @@
                 Add
               </button>
             </div>
+
             <hr class="toDoListLineSplit">
+            
             <div class="taskCreationDiv">
               <div class="actualTaskCreation">
                 <input class="taskInput" type="text" placeholder="What needs to be done?">
@@ -138,32 +140,34 @@
         <section class="focusTimer">
           <h1 class="focusTimerName">Focus Timer</h1>
 
-          <div class="timerMinutesDiv">
-            <svg viewBox="0 0 100 100">
-              <circle class="track" cx="50" cy="50" r="45"/>
-              <circle class="timerProgressRing" cx="50" cy="50" r="45"/>
-            </svg>
-            <span class="timerMinutes"></span>
-          </div>
-
-          <div class="timerButtons">
-            <div class="timerLengthOptions flex gap-2">
-              <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">15m</button>
-              <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">25m</button>
-              <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">45m</button>
-              <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">60m</button>
+          <div class="mainTimer">
+            <div class="timerMinutesDiv">
+              <svg viewBox="0 0 100 100">
+                <circle class="track" cx="50" cy="50" r="45"/>
+                <circle class="timerProgressRing" cx="50" cy="50" r="45"/>
+              </svg>
+              <span class="timerMinutes"></span>
             </div>
 
-            <div class="timerControls">
-              <button class="startTimerBtn">
-                <img src="../Images/Start Timer Icon.png" class="startTimerBtnIcon w-4">
-              </button>
-              <button class="pauseTimerBtn">
-                <img src="../Images/Pause Timer Icon.png" class="pauseTimerBtnIcon w-4">
-              </button>
-              <button class="restartTimerBtn">
-                <img src="../Images/Restart Timer Icon.png" class="restartTimerBtnIcon w-4">
-              </button>
+            <div class="timerButtons">
+              <div class="timerLengthOptions flex gap-2">
+                <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">15m</button>
+                <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">25m</button>
+                <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">45m</button>
+                <button class="px-4 py-2 rounded-full bg-blue-500 font-semibold">60m</button>
+              </div>
+
+              <div class="timerControls">
+                <button class="startTimerBtn">
+                  <img src="../Images/Start Timer Icon.png" class="startTimerBtnIcon w-4">
+                </button>
+                <button class="pauseTimerBtn">
+                  <img src="../Images/Pause Timer Icon.png" class="pauseTimerBtnIcon w-4">
+                </button>
+                <button class="restartTimerBtn">
+                  <img src="../Images/Restart Timer Icon.png" class="restartTimerBtnIcon w-4">
+                </button>
+              </div>
             </div>
           </div>
         </section>
