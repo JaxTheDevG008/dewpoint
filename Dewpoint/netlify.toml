@@ -3,7 +3,7 @@ Netlify
  to enter the frontend folder first
   base = "Code/frontend"
 
-  command = "npm run build"
+  command = ""
 
   publish = "."
 
