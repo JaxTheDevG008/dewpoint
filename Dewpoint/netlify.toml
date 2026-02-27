@@ -1,4 +1,4 @@
 [build]
-  base = ""
+  base = "Code/frontend"
   command = ""
-  publish = "Code/frontend"
+  publish = ""
